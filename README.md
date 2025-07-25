@@ -23,24 +23,6 @@ This Detection Engineering Lab replicates a Windows domain-joined enterprise mon
 
 ---
 
-## 📦 GRA Platform Migration
-
-- Migrated **Gurucul Risk Analytics** from a cloud-based Linode instance to a CentOS server.
-- Restored core components: **MySQL**, **CrateDB**, detection models, and pipelines.
-- Configured **SELinux** and firewall rules to secure the environment.
-
----
-
-## 🔄 Telemetry Pipeline Configuration
-
-- Installed **NxLog** on Windows endpoints to forward event logs to the GRA syslog listener.
-- Developed custom **Logstash parsers** to:
-  - Parse Windows event logs
-  - Map and normalize key attributes
-  - Route telemetry into the SIEM pipeline
-
----
-
 ## ⚔️ Red Team Simulation
 
 - Conducted adversary emulation using:
@@ -59,10 +41,9 @@ This Detection Engineering Lab replicates a Windows domain-joined enterprise mon
 
 - Researched detection strategies using:
   - **Sigma rules**, **YARA signatures**
-  - CVE bulletins, threat intel blogs
+  - CVE bulletins, threat intel blogs, CISA Alerts
 - Built custom detection content mapped to **MITRE ATT&CK** techniques.
 - Tuned **SIEM** and **UEBA** models to detect and alert on malicious behavior.
-- Iteratively refined detections by replaying attacks and validating signal quality.
 
 ---
 
