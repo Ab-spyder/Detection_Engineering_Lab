@@ -11,5 +11,5 @@ Screenshots and documentation from attack simulations and detections.
 ## [Simulation Logs](./Simulation%20Logs)
 Log data and telemetry generated from simulated threats using Atomic Red Team, Caldera, etc.
 
-## [Threat Research Papers](./Threat%20Research%20Papers)
-Personal threat research, Sigma/YARA rules, and detection logic notes.
+## [Threat Research Writeups](./Threat%20Research%20Papers)
+Personal threat research, and detection logic notes.
