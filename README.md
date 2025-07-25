@@ -66,6 +66,6 @@ This Detection Engineering Lab replicates a Windows domain-joined enterprise mon
 - [`Simulation Logs`](./Simulation%20Logs)  
   Event logs generated during red team activity.
 
-- [`Threat Research Papers`](./Threat%20Research%20Papers)  
-  Detection logic, Sigma/YARA rules, and custom research notes.
+- [`Threat Research Writeups`](./Threat%20Research%20Papers)  
+  Detection logic and custom research notes.
 
