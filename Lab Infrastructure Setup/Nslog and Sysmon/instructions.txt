@@ -1,0 +1,37 @@
+1. Enable All Auditing Logs
+Open the Start Menu, type gpedit.msc, and press Enter to open the Group Policy Editor.
+
+Navigate to the following path:
+
+Computer Configuration ? Windows Settings ? Security Settings ? Local Policies ? Audit Policy
+Enable all 9 audit policies by setting each to log both Success and Failure events.
+
+Open Command Prompt as Administrator and run:
+
+gpupdate /force
+This will apply the policy changes immediately.
+
+2. Install and Configure Sysmon
+Install Sysmon
+
+Copy the sysmonconfig-export.xml configuration file from the sysmon conf folder into the Sysmon installation directory.
+
+Open Command Prompt as Administrator, navigate to the unzipped Sysmon directory, and run:
+
+sysmon64.exe -accepteula -i sysmonconfig-export.xml
+This installs and configures Sysmon with the provided configuration.
+
+3. Install and Configure NXLog
+Install the NXLog Community Edition.
+
+Open Services, locate the NXLog service, and stop it.
+
+Navigate to:
+
+C:\Program Files\nxlog\conf
+Delete the existing nxlog.conf file and replace it with the custom configuration file provided.
+
+Return to Services, and start (or restart) the NXLog service to apply the new configuration.
+
+After completing your testing, stop the NXLog service to avoid unnecessary log collection.
+
